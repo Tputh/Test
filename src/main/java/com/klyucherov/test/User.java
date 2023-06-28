@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
 import java.util.*;
+
 @Data
 @RequiredArgsConstructor
 public class User {
@@ -17,7 +18,7 @@ public class User {
     }
 
     public boolean checkEmail(String email) {
-        if (!email.contains("@") || !email.contains(".")){
+        if (!email.contains("@") || !email.contains(".")) {
             throw new RuntimeException("в ведены не коректные данные");
         }
         return true;

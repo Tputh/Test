@@ -11,11 +11,9 @@ class UserTest {
     private User user;
 
 
-
-
     @Test
     public void testingConstructor() {
-        user = new User("test","@.");
+        user = new User("test", "@.");
         Assertions.assertEquals(user.getEmail(), "@.");
         Assertions.assertEquals(user.getLogin(), "test");
     }
@@ -34,9 +32,7 @@ class UserTest {
 
     @Test
     public void testingСompare() {
-        user = new User("test","@.");
+        user = new User("test", "@.");
         Assertions.assertNotEquals(user.getEmail(), user.getLogin());
     }
-
-
 }
